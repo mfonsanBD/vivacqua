@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+/***********
+1. Fonts
+***********/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,800,900');
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+p
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.8666;
+	font-weight: 500;
+	color: #838383;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+/*********************************
+5. Home
+*********************************/
+
+.home_about
+{
+	width: 100%;
+	height:300px;
+}
+.home_about_container
+{
+	position: absolute;
+	left: 0;
+	top: 185px;
+	width: 100%;
+}
+.home_about_title
+{
+	font-size: 30px;
+	font-weight: 600;
+	color: #FFFFFF;
+	line-height: 0.75;
+}
+.breadcrumbs ul
+{
+	line-height: 0.75;
+}
+.breadcrumbs ul li
+{
+	display: inline-block;
+	position: relative;
+	font-size: 12px;
+	font-weight: 500;
+	color: #FFFFFF;
+	line-height: 0.75;
+}
+.breadcrumbs ul li:not(:last-child)::after
+{
+	display: inline-block;
+	content: '/';
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.breadcrumbs ul li a
+{
+	font-size: 12px;
+	font-weight: 500;
+	color: #FFFFFF;
+	line-height: 0.75;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.breadcrumbs ul li a:hover
+{
+	color: #6668c5;
+}
+
+/*********************************
+7. About
+*********************************/
+
+.about
+{
+	width: 100%;
+	background: #FFFFFF;
+	padding-top: 91px;
+	padding-bottom: 100px;
+}
+.about_content
+{
+	padding-top: 16px;
+	padding-right: 10px;
+}
+.about_text
+{
+	margin-top: 55px;
+}
+.about_image
+{
+	width: 100%;
+}
+.about_image img
+{
+	max-width: 100%;
+}
+.milestones_row
+{
+	margin-top: 91px;
+}
+.milestone
+{
+	width: 100%;
+}
+.milestone_icon
+{
+	display: inline-block;
+	height: 74px;
+	width: 73px;
+}
+.milestone_icon img
+{
+	max-width: 100%;
+}
+.milestone_content
+{
+	padding-left: 22px;
+}
+.milestone_counter
+{
+	font-size: 30px;
+	font-weight: 500;
+	color: #282828;
+	line-height: 0.75;
+}
+.milestone_text
+{
+	font-size: 18px;
+	font-weight: 500;
+	color: #828282;
+	margin-top: 12px;
+	line-height: 1.2;
+}
+
+/*********************************
+8. Realtors
+*********************************/
+
+.realtors
+{
+	width: 100%;
+	background: #f0f2f7;
+	padding-top: 105px;
+	padding-bottom: 74px;
+}
+.realtors_row
+{
+	margin-top: 63px;
+}
+.realtor
+{
+	width: 100%;
+	background: #FFFFFF;
+	z-index: 2;
+	margin-bottom: 58px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.realtor_outer:hover .realtor
+{
+	box-shadow: 0px 13px 27px rgba(0,0,0,0.28);
+}
+.realtor_image
+{
+	width: 100%;
+}
+.realtor_image img
+{
+	max-width: 100%;
+}
+.realtor_body
+{
+	padding-top: 23px;
+	padding-bottom: 41px;
+	text-align: center;
+}
+.realtor_title
+{
+	font-size: 18px;
+	font-weight: 600;
+	color: #282828;
+}
+.realtor_subtitle
+{
+	font-size: 14px;
+	font-weight: 400;
+	color: #828282;
+	margin-top: -1px;
+}
+.realtor_link
+{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	bottom: -29px;
+	width: 60%;
+	height: 57px;
+	background: linear-gradient(to right, #c7ccd7, #c7ccd7);
+	border-radius: 23px;
+	text-align: center;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.realtor_link a
+{
+	display: block;
+	line-height: 57px;
+	font-size: 30px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.realtor_link_background_container
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	z-index: 1;
+}
+.realtor_link_background_container > div
+{
+	width: 100%;
+	height: 100%;
+}
+.realtor_link_background
+{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	bottom: -29px;
+	width: 46px;
+	height: 57px;
+	background: #c7ccd7;
+	border-radius: 23px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.realtor_outer:hover .realtor_link_background
+{
+	box-shadow: 0px 20px 21px rgba(0,0,0,0.25);
+}
+.realtor_outer:hover .realtor_link
+{
+	background: linear-gradient(to right, #3e4095, #393a7a);
+}
